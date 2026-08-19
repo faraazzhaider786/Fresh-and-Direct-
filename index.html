@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh & Direct</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar -->
+<div class="top-bar">
+  <span>Free delivery on orders above Rs. 999</span>
+  <span class="d-none d-md-block">Call us: 0300-1234567 &nbsp;|&nbsp; Track Order</span>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container-fluid px-3">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      Fresh &amp; Direct
+    </a>
+
+    <!-- Mobile Icons (visible on mobile only) -->
+    <div class="d-flex d-lg-none align-items-center gap-3 ms-auto me-2">
+      <a href="#" class="nav-icon-link position-relative">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.95-1.57l1.65-8.43H6"/></svg>
+        <span class="cart-badge">3</span>
+      </a>
+      <a href="#" class="nav-icon-link">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainMenu">
+
+      <!-- Search Bar -->
+      <div class="search-wrap mx-lg-4 my-2 my-lg-0">
+        <input type="text" placeholder="Search for vegetables, fruits, dairy...">
+        <button>Search</button>
+      </div>
+
+      <!-- Desktop Icons -->
+      <div class="d-none d-lg-flex align-items-center gap-4 ms-auto">
+        <a href="login.html" class="nav-icon-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Account</span>
+        </a>
+        <a href="#" class="nav-icon-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <span>Wishlist</span>
+        </a>
+        <a href="#" class="nav-icon-link position-relative">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.95-1.57l1.65-8.43H6"/></svg>
+          <span>Cart</span>
+          <span class="cart-badge">3</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Category Nav -->
+<div class="category-nav">
+  <div class="container-fluid px-3">
+    <div class="cat-links">
+      <a href="#" class="cat-link active">All Categories</a>
+      <a href="#" class="cat-link">Fruits &amp; Veggies</a>
+      <a href="#" class="cat-link">Dairy &amp; Eggs</a>
+      <a href="#" class="cat-link">Bakery</a>
+      <a href="#" class="cat-link">Meat &amp; Fish</a>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid px-0">
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="images/img7.jpg" class="d-block w-100" alt="Fresh & Direct">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4">Fresh & Direct</h1>
+                        <p class="lead">Fresh groceries delivered to your home</p>
+                        <button class="btn btn-success"><a class="hero_sec_btn" href="products.html">Shop Now</a></button>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="images/img9.jpg" class="d-block w-100" alt="Best Quality Products">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4">Best Quality Products</h1>
+                        <p class="lead">Healthy and fresh every day</p>
+                        <button class="btn btn-success"><a class="hero_sec_btn" href="products.html">Explore</a></button>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="images/img8.jpg" class="d-block w-100" alt="Fast Delivery">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4">Fast Delivery</h1>
+                        <p class="lead">Get your order within hours</p>
+                        <button class="btn btn-success"><a class="hero_sec_btn" href="products.html">Order Now</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+    <!-- Category Section -->
+<section class="category-section">
+  <div class="container">
+
+    <div class="section-heading text-center">
+      <h2>Shop by Category</h2>
+      <p>Fresh picks across all your favourite categories</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Fruits & Veggies -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+        <div class="cat-card text-center">
+          <div class="cat-icon" style="background:#eaf7ee;">
+            <img src="images/vegetable.png" alt="Fruits & Veggies">
+          </div>
+          <h6 class="cat-name">Fruits &amp; Veggies</h6>
+          <span class="cat-count">120+ items</span>
+        </div>
+      </div>
+
+      <!-- Dairy & Eggs -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+        <div class="cat-card text-center">
+          <div class="cat-icon" style="background:#fff8e1;">
+            <img src="images/dairy-products.png" alt="Dairy & Eggs">
+          </div>
+          <h6 class="cat-name">Dairy &amp; Eggs</h6>
+          <span class="cat-count">60+ items</span>
+        </div>
+      </div>
+
+      <!-- Bakery -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+        <div class="cat-card text-center">
+          <div class="cat-icon" style="background:#fef3e2;">
+            <img src="images/bread.png" alt="Bakery">
+          </div>
+          <h6 class="cat-name">Bakery</h6>
+          <span class="cat-count">45+ items</span>
+        </div>
+      </div>
+
+      <!-- Meat & Fish -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+        <div class="cat-card text-center">
+          <div class="cat-icon" style="background:#ffeaea;">
+            <img src="images/food.png" alt="Meat & Fish">
+          </div>
+          <h6 class="cat-name">Meat &amp; Fish</h6>
+          <span class="cat-count">80+ items</span>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+<!-- Featured Products Section -->
+<section class="fp-section">
+  <div class="container">
+
+    <div class="fp-top d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+      <div>
+        <h2 class="fp-title">Featured Products</h2>
+        <p class="fp-sub">Hand-picked fresh items just for you</p>
+      </div>
+      <div class="fp-tabs d-flex gap-2 flex-wrap">
+        <button class="fp-tab active">All</button>
+        <button class="fp-tab">Fruits</button>
+        <button class="fp-tab">Vegetables</button>
+        <button class="fp-tab">Dairy</button>
+        <button class="fp-tab">Bakery</button>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="prod-card">
+          <div class="prod-img" style="background:#eaf7ee;">
+            <span class="badge-new">New</span>
+            <button class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e53935" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button>
+            <img src="images/broccoli.jpg" alt="Fresh Broccoli" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <div class="prod-body">
+            <div class="prod-cat">Vegetables</div>
+            <h6 class="prod-name">Fresh Broccoli</h6>
+            <div class="stars">★★★★★ <span>(42)</span></div>
+            <div class="prod-weight">500g pack</div>
+            <div class="prod-footer">
+              <div><span class="prod-price">Rs. 120</span><span class="prod-old">Rs. 150</span></div>
+              <button class="add-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="prod-card">
+          <div class="prod-img" style="background:#fff8e1;">
+            <span class="badge-sale">20% Off</span>
+            <button class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e53935" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button>
+            <img src="images/milk.jpg" alt="Fresh Milk" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <div class="prod-body">
+            <div class="prod-cat">Dairy</div>
+            <h6 class="prod-name">Fresh Milk</h6>
+            <div class="stars">★★★★☆ <span>(88)</span></div>
+            <div class="prod-weight">1 Litre</div>
+            <div class="prod-footer">
+              <div><span class="prod-price">Rs. 180</span><span class="prod-old">Rs. 220</span></div>
+              <button class="add-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="prod-card">
+          <div class="prod-img" style="background:#ffeaea;">
+            <button class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e53935" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button>
+            <img src="images/apple.jpg" alt="Red Apples" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <div class="prod-body">
+            <div class="prod-cat">Fruits</div>
+            <h6 class="prod-name">Red Apples</h6>
+            <div class="stars">★★★★★ <span>(65)</span></div>
+            <div class="prod-weight">1 kg pack</div>
+            <div class="prod-footer">
+              <div><span class="prod-price">Rs. 250</span></div>
+              <button class="add-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="prod-card">
+          <div class="prod-img" style="background:#fef3e2;">
+            <span class="badge-sale">15% Off</span>
+            <button class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e53935" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button>
+            <img src="images/wheat_bread.jpg" alt="Whole Wheat Bread" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <div class="prod-body">
+            <div class="prod-cat">Bakery</div>
+            <h6 class="prod-name">Whole Wheat Bread</h6>
+            <div class="stars">★★★★☆ <span>(31)</span></div>
+            <div class="prod-weight">400g loaf</div>
+            <div class="prod-footer">
+              <div><span class="prod-price">Rs. 95</span><span class="prod-old">Rs. 110</span></div>
+              <button class="add-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="products.html" class="view-all-btn">View All Products</a>
+    </div>
+
+  </div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="wcu-section">
+  <div class="container">
+
+    <div class="section-heading text-center">
+      <h2>Why Choose Us?</h2>
+      <p>We are committed to bringing you the freshest groceries with the best service</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+
+      <!-- Fast Delivery -->
+      <div class="col-6 col-md-3">
+        <div class="wcu-card text-center">
+          <div class="wcu-icon mx-auto" style="background:#eaf7ee;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a6b2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <h6 class="wcu-title">Fast Delivery</h6>
+          <p class="wcu-desc">Get your groceries delivered to your doorstep within 2–4 hours of placing your order.</p>
+        </div>
+      </div>
+
+      <!-- Top Quality -->
+      <div class="col-6 col-md-3">
+        <div class="wcu-card text-center">
+          <div class="wcu-icon mx-auto" style="background:#fff8e1;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h6 class="wcu-title">Top Quality</h6>
+          <p class="wcu-desc">Every product is hand-picked and quality checked to ensure maximum freshness and taste.</p>
+        </div>
+      </div>
+
+      <!-- 24/7 Support -->
+      <div class="col-6 col-md-3">
+        <div class="wcu-card text-center">
+          <div class="wcu-icon mx-auto" style="background:#e3f2fd;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1976d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h6 class="wcu-title">24/7 Support</h6>
+          <p class="wcu-desc">Our customer support team is available around the clock to help you with any issue.</p>
+        </div>
+      </div>
+
+      <!-- 100% Fresh -->
+      <div class="col-6 col-md-3">
+        <div class="wcu-card text-center">
+          <div class="wcu-icon mx-auto" style="background:#ffeaea;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h6 class="wcu-title">100% Fresh</h6>
+          <p class="wcu-desc">We source directly from local farms so your food is always fresh, natural and chemical-free.</p>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="wcu-stats row g-0">
+      <div class="col-6 col-md-3 stat-item text-center">
+        <div class="stat-num">15K+</div>
+        <div class="stat-label">Happy Customers</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item text-center">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Products Available</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item text-center">
+        <div class="stat-num">2 Hrs</div>
+        <div class="stat-label">Avg Delivery Time</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item text-center">
+        <div class="stat-num">4.9 &#9733;</div>
+        <div class="stat-label">Customer Rating</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Brand Column -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-brand">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            Fresh &amp; Direct
+          </div>
+          <p class="footer-desc">Your trusted online grocery store delivering fresh, quality products right to your doorstep across Rawalpindi and Islamabad.</p>
+          <div class="social-links d-flex gap-2 mb-3">
+            <a href="#" class="social-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" class="social-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#" class="app-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div>
+                <small>Download on</small>
+                <strong>App Store</strong>
+              </div>
+            </a>
+            <a href="#" class="app-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M3.18 23.76c.3.17.65.19.97.08l11.65-11.65L12 8.39 3.18 23.76zM20.77 9.29l-2.79-1.6-3.44 3.44 3.44 3.44 2.8-1.61c.8-.46.8-1.67-.01-2.67zM2.08.59C1.77.82 1.57 1.19 1.57 1.64v20.72c0 .45.2.82.51 1.05L15.37 12 2.08.59zM15.8 12.8l-3.62 3.62 11.65 6.72c.32.19.68.2.98.07L15.8 12.8z"/></svg>
+              <div>
+                <small>Get it on</small>
+                <strong>Google Play</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="footer-heading">Categories</h6>
+          <ul class="footer-links">
+            <li><a href="#">Fruits &amp; Veggies</a></li>
+            <li><a href="#">Dairy &amp; Eggs</a></li>
+            <li><a href="#">Bakery</a></li>
+            <li><a href="#">Meat &amp; Fish</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Newsletter -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <h6 class="footer-heading">Contact Us</h6>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a8d5b5" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Address</div>
+              <div class="contact-text">Saddar, Rawalpindi, Punjab, Pakistan</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a8d5b5" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12 19.79 19.79 0 01.1 3.4 2 2 0 012.08 1.25h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.17a16 16 0 006.24 6.24l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-text">0300-1234567</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a8d5b5" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-text">info@freshanddirect.pk</div>
+            </div>
+          </div>
+
+          <h6 class="footer-heading mt-4">Newsletter</h6>
+          <p class="newsletter-note">Get weekly deals and fresh offers in your inbox.</p>
+          <div class="newsletter-wrap">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <hr class="footer-divider">
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+        <p class="footer-copy mb-0">© 2026 Fresh &amp; Direct. All rights reserved.</p>
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="pay-badge">JazzCash</span>
+          <span class="pay-badge">EasyPaisa</span>
+          <span class="pay-badge">Visa</span>
+          <span class="pay-badge">Mastercard</span>
+          <span class="pay-badge">COD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<script src="main.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+

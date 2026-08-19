@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart – Fresh & Direct</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>Free delivery on orders above Rs. 999</span>
+    <span class="d-none d-md-block">Call us: 0300-1234567</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid px-3">
+      <a class="navbar-brand" href="index.html">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Fresh &amp; Direct
+      </a>
+      <div class="d-flex d-lg-none align-items-center gap-3 ms-auto me-2">
+        <a href="cart.html" class="nav-icon-link position-relative">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.95-1.57l1.65-8.43H6"/></svg>
+          <span class="cart-badge" id="cartCount">3</span>
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <div class="search-wrap mx-lg-4 my-2 my-lg-0">
+          <input type="text" placeholder="Search for vegetables, fruits, dairy...">
+          <button>Search</button>
+        </div>
+        <div class="d-none d-lg-flex align-items-center gap-4 ms-auto">
+          <a href="login.html" class="nav-icon-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Account</span>
+          </a>
+          <a href="cart.html" class="nav-icon-link position-relative">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.95-1.57l1.65-8.43H6"/></svg>
+            <span>Cart</span>
+            <span class="cart-badge" id="cartCountDesktop">3</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="container-fluid px-3">
+      <a href="index.html">Home</a>
+      <span class="bc-sep">›</span>
+      <a href="products.html">Products</a>
+      <span class="bc-sep">›</span>
+      <strong>Shopping Cart</strong>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container-fluid px-3 py-4">
+    <div class="row g-4">
+
+      <!-- Cart Items -->
+      <div class="col-lg-8">
+
+        <div class="cart-box">
+          <div class="cart-box-header d-flex align-items-center justify-content-between">
+            <h5 class="cart-box-title">Shopping Cart <span id="itemCount">(3 items)</span></h5>
+            <button class="clear-cart-btn" id="clearCart">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e53935" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/></svg>
+              Clear Cart
+            </button>
+          </div>
+
+
+          <!-- Cart Item 1 -->
+          <div class="cart-item" id="item2" data-price="180">
+            <div class="ci-img" style="background:#fff8e1;">
+              <img src="images/milk.jpg" alt="Fresh Milk">
+            </div>
+            <div class="ci-info">
+              <div class="ci-cat">Dairy</div>
+              <h6 class="ci-name">Fresh Milk</h6>
+              <div class="ci-weight">1 Litre</div>
+              <div class="ci-price">Rs. 180</div>
+            </div>
+            <div class="ci-right">
+              <button class="ci-remove" onclick="removeItem('item2')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+              <div class="qty-control">
+                <button class="qty-btn" onclick="changeQty('q2', -1, 180, 't2')">−</button>
+                <input class="qty-input" id="q2" value="1" readonly>
+                <button class="qty-btn" onclick="changeQty('q2', 1, 180, 't2')">+</button>
+              </div>
+              <div class="ci-total" id="t2">Rs. 180</div>
+            </div>
+          </div>
+
+          <!-- Cart Item 2 -->
+          <div class="cart-item" id="item3" data-price="250">
+            <div class="ci-img" style="background:#ffeaea;">
+              <img src="images/apple.jpg" alt="Red Apples">
+            </div>
+            <div class="ci-info">
+              <div class="ci-cat">Fruits</div>
+              <h6 class="ci-name">Red Apples</h6>
+              <div class="ci-weight">1 kg pack</div>
+              <div class="ci-price">Rs. 250</div>
+            </div>
+            <div class="ci-right">
+              <button class="ci-remove" onclick="removeItem('item3')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+              <div class="qty-control">
+                <button class="qty-btn" onclick="changeQty('q3', -1, 250, 't3')">−</button>
+                <input class="qty-input" id="q3" value="1" readonly>
+                <button class="qty-btn" onclick="changeQty('q3', 1, 250, 't3')">+</button>
+              </div>
+              <div class="ci-total" id="t3">Rs. 250</div>
+            </div>
+          </div> 
+
+          <!-- Cart Footer -->
+          <div class="cart-box-footer">
+            <a href="products.html" class="continue-shopping-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+              Continue Shopping
+            </a>
+            <div class="coupon-wrap">
+              <input type="text" class="coupon-input" placeholder="Enter coupon code..." id="couponInput">
+              <button class="coupon-apply-btn" onclick="applyCoupon()">Apply</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Order Summary -->
+      <div class="col-lg-4">
+
+        <!-- Free Delivery Banner -->
+        <div class="free-delivery-banner mb-3">
+          <div class="fd-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <strong>Free Delivery!</strong>
+            <p>Your order qualifies for free delivery.</p>
+          </div>
+        </div>
+
+        <!-- Summary Card -->
+        <div class="summary-card">
+          <h5 class="summary-heading">Order Summary</h5>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">Rs. 670</span>
+          </div>
+          <div class="summary-row text-success">
+            <span>Discount</span>
+            <span id="discount">− Rs. 60</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery Fee</span>
+            <span class="text-success">Free</span>
+          </div>
+          <div class="summary-row">
+            <span>Coupon</span>
+            <span id="couponDiscount" class="text-muted">− Rs. 0</span>
+          </div>
+
+          <hr class="summary-hr">
+
+          <div class="summary-total-row">
+            <span>Total</span>
+            <span id="grandTotal">Rs. 610</span>
+          </div>
+
+          <a href="checkout.html" class="checkout-btn">
+            Proceed to Checkout
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <p class="secure-note">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            Secure checkout — 100% safe &amp; encrypted
+          </p>
+
+          <div class="pay-methods-row">
+            <span class="pay-pill">JazzCash</span>
+            <span class="pay-pill">EasyPaisa</span>
+            <span class="pay-pill">Visa</span>
+            <span class="pay-pill">COD</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
+

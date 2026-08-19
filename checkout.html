@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout – Fresh & Direct</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>Free delivery on orders above Rs. 999</span>
+    <span class="d-none d-md-block">Call us: 0300-1234567</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid px-3">
+      <a class="navbar-brand" href="index.html">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Fresh &amp; Direct
+      </a>
+      <div class="d-none d-lg-flex align-items-center gap-4 ms-auto">
+        <a href="login.html" class="nav-icon-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Account</span>
+        </a>
+        <a href="cart.html" class="nav-icon-link position-relative">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.95-1.57l1.65-8.43H6"/></svg>
+          <span>Cart</span>
+          <span class="cart-badge">3</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="container-fluid px-3">
+      <a href="index.html">Home</a><span class="bc-sep">›</span>
+      <a href="cart.html">Cart</a><span class="bc-sep">›</span>
+      <strong>Checkout</strong>
+    </div>
+  </div>
+
+  <!-- Progress Steps -->
+  <div class="checkout-steps-wrap">
+    <div class="checkout-steps">
+      <div class="ch-step done">
+        <div class="ch-circle">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span class="ch-label">Cart</span>
+      </div>
+      <div class="ch-line done"></div>
+      <div class="ch-step active">
+        <div class="ch-circle">2</div>
+        <span class="ch-label">Checkout</span>
+      </div>
+      <div class="ch-line"></div>
+      <div class="ch-step">
+        <div class="ch-circle">3</div>
+        <span class="ch-label">Confirmation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container-fluid px-3 py-4">
+    <div class="row g-4">
+
+      <!-- Left: Forms -->
+      <div class="col-lg-8">
+
+        <!-- 1. Contact Info -->
+        <div class="checkout-card mb-3">
+          <div class="checkout-card-head">
+            <span class="step-badge">1</span>
+            <h6 class="checkout-card-title">Contact Information</h6>
+          </div>
+          <div class="checkout-card-body">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="field-label">First Name *</label>
+                <input type="text" class="field-input" placeholder="Ali">
+              </div>
+              <div class="col-sm-6">
+                <label class="field-label">Last Name *</label>
+                <input type="text" class="field-input" placeholder="Khan">
+              </div>
+              <div class="col-sm-6">
+                <label class="field-label">Phone Number *</label>
+                <input type="tel" class="field-input" placeholder="0300-1234567">
+              </div>
+              <div class="col-sm-6">
+                <label class="field-label">Email Address</label>
+                <input type="email" class="field-input" placeholder="ali@email.com">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Delivery Address -->
+        <div class="checkout-card mb-3">
+          <div class="checkout-card-head">
+            <span class="step-badge">2</span>
+            <h6 class="checkout-card-title">Delivery Address</h6>
+          </div>
+          <div class="checkout-card-body">
+            <div class="row g-3">
+              <div class="col-12">
+                <label class="field-label">Street Address *</label>
+                <input type="text" class="field-input" placeholder="House No, Street No, Area">
+              </div>
+              <div class="col-sm-6">
+                <label class="field-label">City *</label>
+                <select class="field-select">
+                  <option>Select City</option>
+                  <option selected>Rawalpindi</option>
+                  <option>Islamabad</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label class="field-label">Area *</label>
+                <select class="field-select">
+                  <option>Select Area</option>
+                  <option>Saddar</option>
+                  <option>Bahria Town</option>
+                  <option>DHA</option>
+                  <option>Gulraiz</option>
+                  <option>Chaklala</option>
+                  <option>Satellite Town</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="field-label">Delivery Notes (optional)</label>
+                <input type="text" class="field-input" placeholder="e.g. Ring bell twice, leave at door...">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Delivery Slot -->
+        <div class="checkout-card mb-3">
+          <div class="checkout-card-head">
+            <span class="step-badge">3</span>
+            <h6 class="checkout-card-title">Choose Delivery Slot</h6>
+          </div>
+          <div class="checkout-card-body">
+            <div class="row g-2">
+              <div class="col-6 col-md-4">
+                <div class="slot-card active" onclick="selectSlot(this)">
+                  <div class="slot-day">Today</div>
+                  <div class="slot-time">10 AM – 12 PM</div>
+                  <div class="slot-free">Free</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="slot-card" onclick="selectSlot(this)">
+                  <div class="slot-day">Today</div>
+                  <div class="slot-time">2 PM – 4 PM</div>
+                  <div class="slot-free">Free</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="slot-card" onclick="selectSlot(this)">
+                  <div class="slot-day">Today</div>
+                  <div class="slot-time">6 PM – 8 PM</div>
+                  <div class="slot-free">Free</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="slot-card" onclick="selectSlot(this)">
+                  <div class="slot-day">Tomorrow</div>
+                  <div class="slot-time">10 AM – 12 PM</div>
+                  <div class="slot-free">Free</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="slot-card" onclick="selectSlot(this)">
+                  <div class="slot-day">Tomorrow</div>
+                  <div class="slot-time">2 PM – 4 PM</div>
+                  <div class="slot-free">Free</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="slot-card" onclick="selectSlot(this)">
+                  <div class="slot-day">Tomorrow</div>
+                  <div class="slot-time">6 PM – 8 PM</div>
+                  <div class="slot-free">Free</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Payment Method -->
+        <div class="checkout-card">
+          <div class="checkout-card-head">
+            <span class="step-badge">4</span>
+            <h6 class="checkout-card-title">Payment Method</h6>
+          </div>
+          <div class="checkout-card-body">
+            <div class="payment-options">
+
+              <div class="payment-option active" onclick="selectPayment(this)">
+                <div class="pay-radio-circle"><div class="pay-radio-inner"></div></div>
+                <div class="pay-icon-box" style="background:#eaf7ee;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a6b2f" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div>
+                  <div class="pay-option-name">Cash on Delivery</div>
+                  <div class="pay-option-desc">Pay when your order arrives at your door</div>
+                </div>
+              </div>
+
+              <div class="payment-option" onclick="selectPayment(this)">
+                <div class="pay-radio-circle"><div class="pay-radio-inner"></div></div>
+                <div class="pay-icon-box" style="background:#fff3e0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f57c00" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                </div>
+                <div>
+                  <div class="pay-option-name">JazzCash</div>
+                  <div class="pay-option-desc">Pay via JazzCash mobile wallet</div>
+                </div>
+              </div>
+
+              <div class="payment-option" onclick="selectPayment(this)">
+                <div class="pay-radio-circle"><div class="pay-radio-inner"></div></div>
+                <div class="pay-icon-box" style="background:#e3f2fd;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1976d2" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                </div>
+                <div>
+                  <div class="pay-option-name">EasyPaisa</div>
+                  <div class="pay-option-desc">Pay via EasyPaisa mobile wallet</div>
+                </div>
+              </div>
+
+              <div class="payment-option" onclick="selectPayment(this)" id="cardOption">
+                <div class="pay-radio-circle"><div class="pay-radio-inner"></div></div>
+                <div class="pay-icon-box" style="background:#f3e5f5;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8e24aa" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                </div>
+                <div>
+                  <div class="pay-option-name">Debit / Credit Card</div>
+                  <div class="pay-option-desc">Visa, Mastercard — secure payment</div>
+                </div>
+              </div>
+
+              <!-- Card fields shown when card is selected -->
+              <div class="card-fields" id="cardFields">
+                <div class="row g-3 mt-1">
+                  <div class="col-12">
+                    <label class="field-label">Card Number</label>
+                    <input type="text" class="field-input" placeholder="1234 5678 9012 3456" maxlength="19">
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="field-label">Expiry Date</label>
+                    <input type="text" class="field-input" placeholder="MM / YY" maxlength="7">
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="field-label">CVV</label>
+                    <input type="text" class="field-input" placeholder="123" maxlength="3">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Order Summary -->
+      <div class="col-lg-4">
+        <div class="order-summary-card">
+          <h6 class="os-title">Order Summary</h6>
+
+          <!-- Items -->
+          <div class="os-items">
+            <div class="os-item">
+              <div class="os-item-img" style="background:#eaf7ee;">
+                <img src="images/broccoli.jpg" alt="Broccoli">
+              </div>
+              <div class="os-item-name">Fresh Broccoli <span>x2</span></div>
+              <div class="os-item-price">Rs. 240</div>
+            </div>
+            <div class="os-item">
+              <div class="os-item-img" style="background:#fff8e1;">
+                <img src="images/milk.jpg" alt="Milk">
+              </div>
+              <div class="os-item-name">Fresh Milk <span>x1</span></div>
+              <div class="os-item-price">Rs. 180</div>
+            </div>
+            <div class="os-item">
+              <div class="os-item-img" style="background:#ffeaea;">
+                <img src="images/apple.jpg" alt="Apples">
+              </div>
+              <div class="os-item-name">Red Apples <span>x1</span></div>
+              <div class="os-item-price">Rs. 250</div>
+            </div>
+          </div>
+
+          <hr class="os-hr">
+
+          <div class="os-row"><span>Subtotal</span><span>Rs. 670</span></div>
+          <div class="os-row" style="color:#1a6b2f;"><span>Discount</span><span>− Rs. 60</span></div>
+          <div class="os-row"><span>Delivery</span><span style="color:#1a6b2f;">Free</span></div>
+
+          <hr class="os-hr">
+
+          <div class="os-total"><span>Total</span><span>Rs. 610</span></div>
+
+          <button class="place-order-btn" onclick="placeOrder()">
+            Place Order
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+
+          <p class="os-secure">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            100% secure &amp; encrypted checkout
+          </p>
+          <p class="os-terms">By placing your order you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
+
+

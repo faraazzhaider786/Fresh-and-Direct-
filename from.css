@@ -1,0 +1,152 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e1f25, #2b2e38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 35px;
+    width: 100%;
+    max-width: 420px;
+    color: #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading */
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #b0b3b8;
+    margin-bottom: 15px;
+}
+
+/* Input group */
+.input-group {
+    margin-top: 15px;
+}
+
+.input-group label {
+    font-size: 12px;
+    margin-bottom: 6px;
+    display: block;
+    color: #cfd2da;
+}
+
+/* Row */
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    transition: 0.3s;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border: 1px solid #6c7ae0;
+    box-shadow: 0 0 10px rgba(108,122,224,0.6);
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Password box */
+.password-box {
+    position: relative;
+}
+
+.toggle {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.toggle:hover {
+    color: white;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6c7ae0, #8f9fff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(108,122,224,0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(108,122,224,0.6);
+}
+
+/* Error */
+.error {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Success */
+.success {
+    color: #4caf50;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .input-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+}
